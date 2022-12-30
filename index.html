@@ -1,0 +1,3237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>new website</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="webstyle.css" />
+    <style>
+    * {
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #fd79a8), url(images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.home i {
+    position: absolute;
+    top: 0;
+    text-align: center;
+    background:#eee;
+    box-shadow: -2px -2px 5px #eee,2px 2px 5px #eee;
+    border-radius: 50%;
+    display: flex;
+    animation: buble 5s linear infinite;
+}
+
+@keyframes buble {
+
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(1200%);
+    }
+
+
+}
+
+.total .web-title {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 100px;
+    height: 50px;
+    background: blue;
+    margin: 0;
+    padding: 0;
+}
+
+.home ul {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    z-index: 1000;
+}
+
+.home ul li {
+    position: relative;
+    top: 0;
+    left: 30%;
+    list-style: none;
+    display: flex;
+    background: rgba(0, 0, 0, .06);
+    margin: 3px;
+    backdrop-filter: blur(90px);
+}
+
+.home ul li a {
+    position: relative;
+    text-decoration: none;
+    font-size: 1.2em;
+    list-style: none;
+    color: #fff;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.home ul li a:hover {
+    color: #FD7272;
+
+}
+
+#marker {
+    position: absolute;
+    bottom: -8px;
+    background: blue;
+    height: 4px;
+    transition: .5s;
+}
+
+.home .content {
+    position: relative;
+    top: 20%;
+    left: 20px;
+    width: 300px;
+    height: 300px;
+}
+
+.home .content h3 {
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+}
+
+.home .content p {
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 800;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    overflow: inherit;
+}
+
+.home #typing-text {
+    position: relative;
+    top: 40px;
+    left: 25%;
+    width: 350px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.home #typing-text h4 {
+    position: relative;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    padding: 5px;
+    margin: 5px;
+    color: #000;
+    z-index: 1;
+}
+
+.home #typing-text .typingwidth {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 350px;
+    height: 70px;
+}
+
+.about {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.about h1 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: transparent;
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+}
+
+.about h1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 61%;
+    width: 300px;
+    height: 2px;
+    background: #000;
+}
+
+.about .wraper1 {
+    position: relative;
+    left: 20px;
+    top: 40px;
+    width: 950px;
+    height: 400px;
+    padding: 10px;
+    background: #fff;
+    box-shadow: -3px -3px 5px #eee, 3px 3px 5px #eee;
+    border-radius: 2px;
+    display: flex;
+    margin: 0;
+}
+
+.about .wraper1 .img-content {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 350px;
+    float: left;
+    margin: 10px;
+}
+
+.about .wraper1 .img-content img {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    
+    border: 5px solid #eee;
+    box-shadow: -3px -3px 5px rgba(0, 0, 0, .09), -3px -3px 5px rgba(0, 0, 0, .09), 3px 3px 5px rgba(0, 0, 0, .09), 3px 3px 5px #eee;
+}
+
+.about .wraper1 .text-content {
+    position: relative;
+    top: 0;
+    left: 10px;
+    width: 500px;
+    height: 350px;
+    float: right;
+    margin: 10px;
+}
+
+.wraper1.show {
+    position: relative;
+    top: 0;
+    left: 20px;
+    transform: translateY(-10px);
+}
+
+.about .wraper1 .text-content h2 {
+    font-size: 1.5em;
+    font-family: sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 5px;
+    margin: 5px;
+}
+
+.about .wraper1 .text-content p {
+    font-family: sans-serif;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+.about .wraper1 .text-content #btn {
+    position: relative;
+    top: 30px;
+    left: 0;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #fff;
+    background: #21f123;
+    border:none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius:5px;
+    cursor: pointer;
+    transition: .3s;
+    overflow: hidden;
+    transition: .5s;
+}
+.about .wraper1 #btn span {
+    position: relative;
+    z-index: 1;
+}
+
+.about .wraper1 #btn span .span1 {
+    color: #000;
+}
+
+/*skill div area start here*/
+.Skill {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #ecf0f1;
+    margin: 0;
+    padding: 0;
+}
+
+.Skill h2 {
+
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: transparent;
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+
+}
+
+.Skill h2:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 56px;
+    left: 58%;
+    width: 300px;
+    height: 2px;
+    background: #000;
+}
+
+.Skill .wraper2 {
+    position: relative;
+    left: 20px;
+    top: 0;
+    width: 950px;
+    height: 400px;
+    padding: 10px;
+    display: flex;
+    margin: 0;
+    background: #fff;
+    box-shadow: 5px 5px 11px #a2b1c6, -5px 5px 11px #fff;
+}
+
+.Skill .wraper2 .all-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 600px;
+    height: 400px;
+    background: transparent;
+    float: left;
+}
+
+.Skill .wraper2 .skill-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    width: 500px;
+    height: 400px;
+    float: right;
+    display: flex;
+}
+
+.Skill .wraper2 .articals {
+    position: absolute;
+    top: 40%;
+    left: 57%;
+    width: 400px;
+    height: 200px;
+
+}
+
+.Skill .wraper2 .articals p {
+    font-family: sans-serif;
+    font-size: normal;
+    text-align: center;
+    letter-spacing: 1px;
+    word-wrap: break-word;
+}
+
+.Skill .wraper2 .morebtn {
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+    background: #21f123;
+    box-shadow: -2px -2px 5px #21f123, 2px 2px 5px #21f123;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .2s;
+}
+
+.Skill .wraper2 .morebtn:hover {
+    box-shadow: 0 0 0;
+}
+
+.Skill .wraper2 .morebtn span {
+    position: relative;
+    z-index: 1;
+}
+
+/*progress bar start here*/
+.Skill .wraper2 .all-box .html5-box {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 450px;
+    height: 50px;
+    background: linear-gradient(to left, #fd79a8, #81ecec);
+    padding: 5px;
+    margin: 5px;
+}
+
+.Skill .wraper2 .all-box .css3-box {
+    position: relative;
+    top: 30px;
+    left: 10px;
+    width: 450px;
+    height: 50px;
+    background: linear-gradient(to left, #fd79a8, #81ecec);
+    padding: 5px;
+    margin: 5px;
+}
+
+.Skill .wraper2 .all-box .js-box {
+    position: relative;
+    top: 40px;
+    left: 10px;
+    width: 450px;
+    height: 50px;
+    background: linear-gradient(to left, #fd79a8, #81ecec);
+    padding: 5px;
+    margin: 5px;
+}
+
+.Skill .wraper2 .all-box .jq-box {
+    position: relative;
+    top: 50px;
+    left: 10px;
+    width: 450px;
+    height: 50px;
+    background: linear-gradient(to left, #fd79a8, #81ecec);
+    padding: 5px;
+    margin: 5px;
+}
+
+.Skill .wraper2 .all-box .php-box {
+    position: relative;
+    top: 60px;
+    left: 10px;
+    width: 450px;
+    height: 50px;
+    background: linear-gradient(to left, #fd79a8, #81ecec);
+    padding: 5px;
+    margin: 5px;
+}
+
+.Skill .wraper2 .all-box .html5-box .progras {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    height: 20px;
+    background: gray;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+    box-shadow: inset 0 0 10px #000, 0 0 10px #000, 0 0 70px #000, inset 0 0 80px #aaa;
+}
+
+.Skill .wraper2 .all-box .html5-box .progras .pr-color {
+    position: relative;
+    width: 85%;
+    height: 20px;
+    background: linear-gradient(90deg, #fd79a8, #81ecec, #b2bec3);
+    border-radius: 20px;
+    animation: progress 4s ease-in-out forwards;
+}
+
+.Skill .wraper2 .all-box .html5-box .htext {
+    position: relative;
+    top: 10px;
+    margin: 5px;
+    right: 0;
+    float: right;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.Skill .wraper2 .all-box .css3-box .progras {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    height: 20px;
+    background: gray;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+    box-shadow: inset 0 0 10px #000, 0 0 10px #000, 0 0 70px #000, inset 0 0 80px #aaa;
+}
+
+.Skill .wraper2 .all-box .css3-box .progras .pr-color {
+    position: relative;
+    width: 75%;
+    height: 20px;
+    background: linear-gradient(90deg, #fd79a8, #81ecec, #b2bec3);
+    border-radius: 20px;
+    animation: progress 4s ease-in-out forwards;
+
+}
+
+.Skill .wraper2 .all-box .css3-box .htext {
+    position: relative;
+    top: 10px;
+    margin: 5px;
+    right: 0;
+    float: right;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.Skill .wraper2 .all-box .js-box .progras {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    height: 20px;
+    background: gray;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+    box-shadow: inset 0 0 10px #000, 0 0 10px #000, 0 0 70px #000, inset 0 0 80px #aaa;
+}
+
+.Skill .wraper2 .all-box .js-box .progras .pr-color {
+    position: relative;
+    width: 55%;
+    height: 20px;
+    background: linear-gradient(90deg, #fd79a8, #81ecec, #b2bec3);
+    border-radius: 20px;
+    animation: progress 4s ease-in-out forwards;
+}
+
+.Skill .wraper2 .all-box .js-box .htext {
+    position: relative;
+    top: 10px;
+    margin: 5px;
+    right: 0;
+    float: right;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.Skill .wraper2 .all-box .jq-box .progras {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    height: 20px;
+    background: gray;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+    box-shadow: inset 0 0 10px #000, 0 0 10px #000, 0 0 70px #000, inset 0 0 80px #aaa;
+}
+
+.Skill .wraper2 .all-box .jq-box .progras .pr-color {
+    position: relative;
+    width: 50%;
+    height: 20px;
+    background: linear-gradient(90deg, #fd79a8, #81ecec, #b2bec3);
+    border-radius: 20px;
+    animation: progress 4s ease-in-out forwards;
+}
+
+.Skill .wraper2 .all-box .jq-box .htext {
+    position: relative;
+    top: 10px;
+    margin: 5px;
+    right: 0;
+    float: right;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.Skill .wraper2 .all-box .php-box .progras {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    width: 300px;
+    height: 20px;
+    background: gray;
+    border-radius: 20px;
+    border: 2px solid #aaa;
+    box-shadow: inset 0 0 10px #000, 0 0 10px #000, 0 0 60px #000, inset 0 0 30px #d1ccc0;
+}
+
+.Skill .wraper2 .all-box .php-box .progras .pr-color {
+    position: relative;
+    width: 70%;
+    height: 20px;
+    background: linear-gradient(90deg, #fd79a8, #81ecec, #b2bec3);
+    border-radius: 20px;
+    animation: progress 3s ease-in-out forwards;
+}
+
+.Skill .wraper2 .all-box .php-box .htext {
+    position: relative;
+    top: 10px;
+    margin: 5px;
+    right: 0;
+    float: right;
+    font-size: 1.1em;
+    font-family: sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.Skill .wraper2 .skill-box .expr-box {
+    position: relative;
+    top: 0;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.Skill .wraper2 .skill-box .expr-box i {
+    position: relative;
+    top: 0;
+    left: 30px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Skill .wraper2 .skill-box .expr-box .num-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 60px;
+}
+
+.Skill .wraper2 .skill-box .expr-box .num-box p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    margin-top: 10px;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.Skill .wraper2 .skill-box .expr-box .num-box h6 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+/*jghkdfslkjfgfkdshgjfdhgfsdhgjkldshgjkfdhgjkdfsg*/
+.Skill .wraper2 .skill-box .projact-box {
+    position: relative;
+    top: 0;
+    left: 35px;
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Skill .wraper2 .skill-box .projact-box i {
+    position: relative;
+    top: 0;
+    left: 30px;
+    color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.Skill .wraper2 .skill-box .projact-box .num-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 60px;
+}
+
+.Skill .wraper2 .skill-box .projact-box .num-box p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.Skill .wraper2 .skill-box .projact-box .num-box h6 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+/*jhfkldshfhkfhsldkhfsdjkhfsdkfsdhfjkhfdsf*/
+.Skill .wraper2 .skill-box .aowerd-box {
+    position: relative;
+    top: 0;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #eee;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.Skill .wraper2 .skill-box .aowerd-box i {
+    position: relative;
+    top: 0;
+    left: 25px;
+    color: transparent;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #000;
+}
+
+.Skill .wraper2 .skill-box .aowerd-box .num-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 60px;
+}
+
+.Skill .wraper2 .skill-box .aowerd-box .num-box p {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 200;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: capitalize;
+}
+
+.Skill .wraper2 .skill-box .aowerd-box .num-box h6 {
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 5px;
+    text-transform: capitalize;
+}
+
+@keyframes progress {
+    from {
+        width: 0%;
+        opacity: 0;
+    }
+}
+
+/*servisec area stert here*/
+.total .services {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #dfe6e9;
+}
+
+.total .services .boxraper {
+    position: relative;
+
+    width: 100%;
+    height: 350px;
+    display: flex;
+}
+
+.total .services .boxraper1 {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 350px;
+
+}
+
+.total .services .head-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 100px;
+
+}
+
+.total .services .head-text h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: transparent;
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+}
+
+.total .services .head-text:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 80%;
+    width: 250px;
+    height: 2px;
+    background: #000;
+}
+
+.total .services .wraper3 {
+    position: relative;
+    left: 20px;
+    top: 0;
+    width: 950px;
+    height: 700px;
+    padding: 10px;
+    display: block;
+    margin: 0;
+    background: transparent;
+}
+
+.total .services .wraper3 .web-desgine {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fd79a8, #6c5ce7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #832ee6;
+    transition: .5s;
+}
+
+.total .services .wraper3 .boxraper .web-desgine:hover {
+    transform: translateY(-10px);
+}
+
+.total .services .wraper3 .web-desgine .img-wraper {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #95afc0;
+}
+
+.total .services .wraper3 .web-desgine .img-wraper i {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: skyblue;
+}
+
+.total .services .wraper3 .web-desgine .web-text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+.total .services .wraper3 .web-desgine .web-text p {
+    position: relative;
+    top: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.total .services .wraper3 .web-desgine .text-content1 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.total .services .wraper3 .web-desgine .text-content1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+/*jkhflkdshfdshjgjdfkhgjkfdshgdfhjgkhljdskgksldfgfdsgsdfgsdfgds*/
+.total .services .wraper3 .web-development {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fd79a8, #6c5ce7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #832ee6;
+    transition: .5s;
+}
+
+.total .services .wraper3 .boxraper .web-development:hover {
+    transform: translateY(-10px);
+}
+
+.total .services .wraper3 .web-development .img-wraper {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #95afc0;
+}
+
+.total .services .wraper3 .web-development .img-wraper i {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: skyblue;
+}
+
+.total .services .wraper3 .web-development .web-text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+.total .services .wraper3 .web-development .web-text p {
+    position: relative;
+    top: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.total .services .wraper3 .web-development .text-content1 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.total .services .wraper3 .web-development .text-content1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+/*djflkdsjhfgdhsgjsfdkjghfdsjhgkjfdshjkghfdskjghsdjfkhg*/
+.total .services .wraper3 .logo-desgine {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fd79a8, #6c5ce7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #832ee6;
+    transition: .5s;
+}
+
+.total .services .wraper3 .boxraper .logo-desgine:hover {
+    transform: translateY(-10px);
+}
+
+.total .services .wraper3 .logo-desgine .img-wraper {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #95afc0;
+}
+
+.total .services .wraper3 .logo-desgine .img-wraper i {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: skyblue;
+}
+
+.total .services .wraper3 .logo-desgine .web-text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+.total .services .wraper3 .logo-desgine .web-text p {
+    position: relative;
+    top: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.total .services .wraper3 .logo-desgine .text-content1 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.total .services .wraper3 .logo-desgine .text-content1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+
+/*jfkgskldfgdkfjgjfdkjgfdsjgkdfsglsfdgsfgfdsgdfsgsfdgfd*/
+.total .services .wraper3 .securityseo {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fd79a8, #6c5ce7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #832ee6;
+    transition: .5s;
+}
+
+.total .services .wraper3 .boxraper .securityseo:hover {
+    transform: translateY(-10px);
+}
+
+.total .services .wraper3 .securityseo .img-wraper {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #95afc0;
+}
+
+.total .services .wraper3 .securityseo .img-wraper i {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: skyblue;
+}
+
+.total .services .wraper3 .securityseo .web-text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+.total .services .wraper3 .securityseo .web-text p {
+    position: relative;
+    top: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.total .services .wraper3 .securityseo .text-content1 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.total .services .wraper3 .securityseo .text-content1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+/*jgidsfjgsdfjgsfdjglskgsfgdfgds*/
+.total .services .wraper3 .data-entry {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fd79a8, #6c5ce7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #832ee6;
+    transition: .5s;
+    display: block;
+    transition: .5s;
+}
+
+.total .services .wraper3 .boxraper1 .data-entry:hover {
+    transform: translateY(-10px);
+}
+
+.total .services .wraper3 .data-entry .img-wraper {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #95afc0;
+}
+
+.total .services .wraper3 .data-entry .img-wraper i {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: skyblue;
+}
+
+.total .services .wraper3 .data-entry .web-text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+.total .services .wraper3 .data-entry .web-text p {
+    position: relative;
+    top: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.total .services .wraper3 .data-entry .text-content1 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.total .services .wraper3 .data-entry .text-content1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+/*kljlksdhfgjfgfdskjhgjfdshgkjhfdsjkghfdsjkgfdsg*/
+.total .services .wraper3 .graphics-sdesine {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fd79a8, #6c5ce7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #832ee6;
+    transition: .5s;
+}
+
+.total .services .wraper3 .graphics-sdesine:hover {
+    transform: translateY(-10px);
+}
+
+.total .services .wraper3 .graphics-sdesine .img-wraper {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #95afc0;
+}
+
+.total .services .wraper3 .graphics-sdesine .img-wraper i {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: skyblue;
+}
+
+.total .services .wraper3 .graphics-sdesine .web-text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+.total .services .wraper3 .graphics-sdesine .web-text p {
+    position: relative;
+    top: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.total .services .wraper3 .graphics-sdesine .text-content1 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.total .services .wraper3 .graphics-sdesine .text-content1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+/*jfkldsjgldjkfshgfdsjhgdkfgfdgfdgfdhgd*/
+.total .services .wraper3 .psd-to-html {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fd79a8, #6c5ce7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #832ee6;
+    transition: .5s;
+}
+
+.total .services .wraper3 .psd-to-html:hover {
+    transform: translateY(-10px);
+}
+
+.total .services .wraper3 .psd-to-html .img-wraper {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #95afc0;
+}
+
+.total .services .wraper3 .psd-to-html .img-wraper i {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: skyblue;
+}
+
+.total .services .wraper3 .psd-to-html .web-text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+.total .services .wraper3 .psd-to-html .web-text p {
+    position: relative;
+    top: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.total .services .wraper3 .psd-to-html .text-content1 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.total .services .wraper3 .psd-to-html .text-content1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+/*kjdgsjfdkgdfksjgjkfdsglsfdgfdsgfdsgdfsgdsfgfdsg*/
+.total .services .wraper3 .wordpress-webdesigne {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 300px;
+    background: linear-gradient(to bottom, #fd79a8, #6c5ce7);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #832ee6;
+    transition: .5s;
+}
+
+.total .services .wraper3 .wordpress-webdesigne:hover {
+    transform: translateY(-10px);
+}
+
+.total .services .wraper3 .wordpress-webdesigne .img-wraper {
+    position: relative;
+    top: 10px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    background: #95afc0;
+}
+
+.total .services .wraper3 .wordpress-webdesigne .img-wraper i {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-align: center;
+    color: skyblue;
+}
+
+.total .services .wraper3 .wordpress-webdesigne .web-text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+
+}
+
+.total .services .wraper3 .wordpress-webdesigne .web-text p {
+    position: relative;
+    top: 0px;
+    font-family: monospace;
+    font-size: 25px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.total .services .wraper3 .wordpress-webdesigne .text-content1 {
+    position: relative;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 80px;
+
+}
+
+.total .services .wraper3 .wordpress-webdesigne .text-content1 p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+    margin: 5px;
+}
+
+.total .center-img-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    transition: .4s;
+    overflow: hidden;
+    justify-content: center;
+    background: #D2E3F5;
+    background: url(images/darklptop.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.total .center-img-box .img-box1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 550px;
+    background: rgba(0, 0, 0, .4);
+}
+
+.total .center-img-box .img-box1 .counting {
+    position: relative;
+    top: 20%;
+    left: 10%;
+    width: 800px;
+    height: 300px;
+    background: rgba(0, 0, 0, .1);
+    backdrop-filter: blur(3px);
+    display: flex;
+}
+
+.total .center-img-box .img-box1 .counting .count-box1 {
+    position: relative;
+    top: 20px;
+    left: 50px;
+    margin: 10px;
+    width: 200px;
+    height: 250px;
+    background: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(20px);
+    border-radius: 5px;
+}
+
+.total .center-img-box .img-box1 .counting .count-box1 span {
+    position: relative;
+    top: 20px;
+    left: 65px;
+    font-size: 3.5em;
+    font-weight: 500;
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #aaa;
+}
+
+.total .center-img-box .img-box1 .counting .count-box1 h5 {
+    position: relative;
+    top: 40px;
+    left: 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    font-family: sans-serif;
+    border-bottom: 1px solid #aaa;
+}
+
+.total .center-img-box .img-box1 .counting .count-box1 h5:last-child {
+    font-size: 15px;
+    position: relative;
+    top: 60px;
+    left: 0;
+    border: none;
+}
+
+/*galery filter area style stert here*/
+.container {
+    position: relative;
+    width: 100%;
+    height: 1250px;
+    background: #ecf0f1;
+    overflow: hidden;
+}
+
+.container .text {
+    position: relative;
+    top: 20px;
+    left: 10px;
+    width: 100%;
+    height: 100px;
+    background: transparent;
+}
+
+.container .text h1 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: transparent;
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fd79a8;
+
+}
+
+.container .text h1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 60%;
+    width: 300px;
+    height: 2px;
+    background: #000;
+}
+
+.container .img-box {
+    position: relative;
+    top: 30px;
+    left: 5%;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+    transition: 1s;
+}
+
+.container .img-box ul {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 700px;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: 1s;
+}
+
+.container .img-box ul li {
+    position: relative;
+    list-style: none;
+    background: #bdc3c7;
+    padding: 14px 20px 10px 20px;
+    margin-left: 10px;
+    transition: 1s;
+    overflow: hidden;
+
+}
+
+.container .img-box ul li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 20px;
+    height: 20px;
+    background: #bdc3c7;
+    border-bottom-right-radius: 10px;
+}
+
+.container .img-box ul li.active {
+    background: #55efc4;
+    transition: .5s;
+}
+
+.container .img-box ul li a {
+    position: relative;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    display: block;
+    outline: none;
+    align-content;
+}
+
+.container .img-box ul li.active a {
+    color: #ffffff;
+}
+
+.container .img-box ul li:first-child {
+    border-top-left-radius: 10px;
+}
+
+.container .img-box ul li:last-child {
+    border-top-right-radius: 10px;
+}
+
+.container .product {
+    position: relative;
+    top: 40px;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+.container .product .item-box {
+    position: relative;
+    top: 0;
+    left: 5px;
+    width: 200px;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    object-fit: fill;
+}
+
+.container .product .item-box.hide {
+    display: none;
+    transition-delay: 1s;
+}
+
+.container .product .item-box img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border: 3px solid #ddd;
+    margin: 0;
+    padding: 0;
+    transition: 1s all;
+}
+
+/*galery filter area style ending here*/
+/*client area style stert here*/
+
+.client-area {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.client-area .wraper5 {
+    position: relative;
+    top: 50px;
+    left: 30px;
+    width: 950px;
+    height: 500px;
+    background: #eee;
+    box-shadow: 0 0 20px #aaa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.client-area .wraper5 .client1 {
+    position: relative;
+    left: 0;
+    top: 15%;
+    width: 200px;
+    height: 350px;
+    background: ;
+    box-shadow: 0 0 20px #eee;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, .09), 4px 4px 8px rgba(0, 0, 0, .09);
+    transition: .5s;
+}
+
+.client-area .wraper5 .client1:hover {
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+.client-area .wraper5 .client1 img {
+    position: relative;
+    left: 40px;
+    top: -40px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #eee;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    box-shadow: -4px -4px 8px rgba(0, 0, 0, .09), 4px 4px 8px rgba(0, 0, 0, .09);
+}
+
+.client-area .wraper5 .client1 h3 {
+    position: relative;
+    top: -30px;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 400;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+}
+
+.client-area .wraper5 .client1 p {
+    position: relative;
+    top: 30px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 1px;
+
+}
+
+.client-area .area-text {
+    position: relative;
+    top: 20px;
+    left: 20px;
+    width: 800px;
+    height: 100px;
+    margin: 5px;
+    background: transparent;
+}
+
+.client-area .area-text h1 {
+    position: relative;
+    top: 10px;
+    left: 0;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: transparent;
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fd79a8;
+}
+
+.client-area .area-text h1:before {
+    content: '';
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 83%;
+    width: 300px;
+    height: 2px;
+    background: #000;
+}
+
+.client-area .icon-box1 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 180px;
+    height: 40px;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.client-area .icon-box1 span {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 5px 10px;
+    color: #eee;
+    text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.45), 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.client-area .icon-box1 span:hover {
+    color: #55efc4;
+    transition: .3s;
+}
+
+.client-area .icon-box2 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 180px;
+    height: 40px;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.client-area .icon-box2 span {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 5px 10px;
+    color: #eee;
+    text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.45), 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.client-area .icon-box2 span:hover {
+    color: #55efc4;
+    transition: .3s;
+}
+
+.client-area .icon-box3 {
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    width: 180px;
+    height: 40px;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.client-area .icon-box3 span {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 5px 10px;
+    color: #eee;
+    text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.45), 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.client-area .icon-box3 span:hover {
+    color: #55efc4;
+    transition: .3s;
+}
+
+.client-area .icon-box4 {
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    width: 180px;
+    display: inline-block;
+    height: 40px;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    background: #eee;
+}
+
+.client-area .icon-box4 span {
+    font-size: 2.2rem;
+    text-align: center;
+    margin: 5px 10px;
+    color: #eee;
+    text-shadow: -2px -2px 10px rgba(0, 0, 0, 0.45), 2px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.client-area .icon-box4 span:hover {
+    color: #55efc4;
+    transition: .3s;
+}
+
+.letest-area {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #dfe6e9;
+    margin: 0;
+    padding: 0;
+}
+
+.letest-area .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+
+}
+
+.letest-area .title h1 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: transparent;
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+}
+
+.letest-area .title h1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 95%;
+    width: 300px;
+    height: 2px;
+    background: #000;
+}
+
+.letest-area .wraper6 {
+    position: relative;
+    top: 15%;
+    left: 25px;
+    width: 95%;
+    height: 550px;
+}
+
+.letest-area .content-wraper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.letest-area .content-wraper .content-box {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 250px;
+    background: #fd79a8;
+    z-index: 1;
+    margin: 5px;
+    transition: .3s;
+    box-shadow: -3px -3px 5px rgba(253, 121, 168, 1.0), 3px 3px 5px rgba(253, 121, 168, 1.0);
+}
+
+.letest-area .content-wraper .content-box:hover {
+    box-shadow: 0 0 0;
+
+}
+
+.letest-area .content-wraper .content-box .img-box {
+    position: relative;
+    top: 10px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    transition: .3s;
+}
+
+.letest-area .content-wraper .content-box .img-box img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #55efc4;
+    background: none;
+}
+
+.letest-area .content-wraper .content-box .article-area {
+    position: absolute;
+    width: 100%;
+    height: 200px;
+
+}
+
+.letest-area .content-wraper .content-box .article-area h3 {
+    position: relative;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #000;
+    text-transform: capitalize;
+
+}
+
+.letest-area .content-wraper .content-box .article-area p {
+    position: relative;
+    top: 0;
+    left: 0;
+    text-align: center;
+    font-size: small;
+    font-weight: 900;
+    color: #000;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+/*client area style ending here*/
+.contact-box {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: #c8d6e5;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-box .contact-title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.contact-box .contact-title h1 {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: transparent;
+    padding: 10px;
+    margin: 0;
+    width: 400px;
+    height: 100px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: green;
+}
+
+.contact-box .contact-title h1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 75%;
+    width: 300px;
+    height: 2px;
+    background: #000;
+}
+
+.contact-box .wraper7 {
+    position: relative;
+    top: 20%;
+    left: 5%;
+    width: 900px;
+    height: 500px;
+    background: linear-gradient(rgba(123, 237, 159, 1.0));
+    box-shadow: -3px -3px 5px rgba(223, 249, 251, 1.0), 3px 3px 5px rgba(223, 249, 251, 1.0);
+    display: flex;
+}
+
+.contact-box .wraper7 .contact {
+    position: relative;
+    display: flex;
+}
+
+.contact-box .wraper7 .contact .img-box {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 410px;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    border-top-right-radius: 20px;
+    z-index: 100;
+}
+
+.contact-box .wraper7 .contact .img-box img {
+    position: relative;
+    top: 10px;
+    left: 10px;
+    width: 410px;
+    height: 450px;
+    margin: 0;
+    padding: 0;
+    z-index: -100;
+    clip-path: polygon(0 0, 94% 6%, 100% 100%, 0% 100%);
+
+}
+
+.contact-box .wraper7 .contact .form-box {
+    position: relative;
+    top: 20px;
+    float: right;
+    left: 20px;
+    width: 450px;
+    height: 450px;
+    background: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box {
+    position: relative;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .username {
+    position: relative;
+    top: 0;
+    left: 20px;
+    padding: 5px 20px 5px 20px;
+    margin: 5ppx;
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(46, 213, 115, 1.0);
+    font-size: 15px;
+    text-transform: capitalize;
+    outline: none;
+    margin: 5px 10px;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .username:hover {
+    box-shadow: -1px -1px 2px rgba(129, 236, 236, 1.0), 1px 1px 2px rgba(129, 236, 236, 1.0);
+    transition: .3s;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .label-text {
+    position: relative;
+    top: 0;
+    left: 20px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .Email {
+    position: relative;
+    top: 0;
+    left: 40px;
+    padding: 5px 20px 5px 20px;
+    margin: 5ppx;
+    background: none;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid rgba(46, 213, 115, 1.0);
+    font-size: 15px;
+    text-transform: capitalize;
+    outline: none;
+    margin: 5px 25px;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .Email:hover {
+    box-shadow: -1px -1px 2px rgba(129, 236, 236, 1.0), 1px 1px 2px rgba(129, 236, 236, 1.0);
+    transition: .3s;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .label-text {
+    position: relative;
+    top: 0;
+    left: 20px;
+    font-size: 20px;
+    text-align: left;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #000;
+
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .disc-box {
+    position: relative;
+    top: 30px;
+    left: 25px;
+    width: 400px;
+    height: 250px;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .disc-box #disciption {
+    position: relative;
+    top: 10px;
+    left: 15px;
+    resize: none;
+    outline: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    width: 370px;
+    height: 220px;
+    border: 1px solid #000;
+    background: transparent;
+    border-radius: 5px;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .disc-box #disciption:hover {
+    box-shadow: -1px -1px 2px rgba(129, 236, 236, 1.0), 1px 1px 2px rgba(129, 236, 236, 1.0);
+    transition: .3s;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .btn-box {
+    position: relative;
+    top: 20px;
+    left: 30%;
+    width: 200px;
+    height: 70px;
+    box-shadow: -1px -1px 2px rgba(46, 204, 113, 1.0), 1px 1px 2px rgba(46, 204, 113, 1.0);
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .btn-box span {
+    position: relative;
+    top: 10px;
+    right: 5px;
+    float: right;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .btn-box .btn {
+    position: relative;
+    top: 15px;
+    left: 10px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 600;
+    padding: 10px 15px 10px 15px;
+    border: 2px solid #4cd137;
+    border-radius: 5px;
+    background: #4cd137;
+    box-shadow: -1px -1px 5px #4cd137, 1px 1px 5px #4cd137;
+}
+
+.contact-box .wraper7 .contact .form-box .input-box .btn-box .btn:hover {
+    position: relative;
+    box-shadow: 0 0 0;
+    transition: .2s;
+
+}
+
+.about-area {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: #576574;
+}
+
+.about-area .contact-title {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-area .contact-title h1 {
+    position: relative;
+    top: 10px;
+    left: 40%;
+    font-size: 2.5em;
+    font-family: sans-serif;
+    font-weight: 900;
+    color: #000;
+    padding: 10px;
+    margin: 0;
+    width: 250px;
+    height: 60px;
+}
+
+.about-area .contact-title h1:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 70px;
+    left: -60px;
+    width: 300px;
+    height: 2px;
+    background: #000;
+}
+
+.about-area .wraper8 {
+    position: relative;
+    top: 0;
+    left: 5%;
+    width: 850px;
+    height: 360px;
+    display: inline-block;
+}
+
+.about-area .wraper8 .facebook-box {
+    position: relative;
+    top: 40%;
+    left: 20%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: rgba(53, 59, 72, 1.0);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, .1), 2px 2px 5px rgba(0, 0, 0, .1);
+    transition: .5s;
+    display: block;
+}
+
+.about-area .wraper8 .facebook-box:hover {
+    width: 200px;
+    transition: .5s;
+}
+
+.about-area .wraper8 .facebook {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+}
+
+.about-area .wraper8 .facebook-box .facebook span {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 2.4em;
+    text-align: center;
+    color: #44bd32;
+    mix-blend-mode: screen;
+}
+
+.about-area .wraper8 .facebook-box .facebook span p {
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgba(85, 239, 196, 1.0);
+    text-transform: capitalize;
+}
+
+.about-area .wraper8 .instagram-box {
+    position: relative;
+    top: 20%;
+    left: 60%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: rgba(53, 59, 72, 1.0);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, .1), 2px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.about-area .wraper8 .instagram-box:hover {
+    width: 200px;
+    transition: .5s;
+}
+
+.about-area .wraper8 .instagram-box .instagram {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+}
+
+.about-area .wraper8 .instagram-box .instagram span {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 2.4em;
+    text-align: center;
+    color: #44bd32;
+    mix-blend-mode: screen;
+}
+
+.about-area .wraper8 .instagram-box .instagram span p {
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgba(85, 239, 196, 1.0);
+}
+
+.about-area .wraper8 .twitter-box {
+    position: relative;
+    top: 50%;
+    left: 20%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: rgba(53, 59, 72, 1.0);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, .1), 2px 2px 5px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.about-area .wraper8 .twitter-box:hover {
+    width: 200px;
+    transition: .5s;
+}
+
+.about-area .wraper8 .twitter-box .twitter {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+}
+
+.about-area .wraper8 .twitter-box .twitter span {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 2.4em;
+    text-align: center;
+    color: #44bd32;
+    mix-blend-mode: screen;
+}
+
+.about-area .wraper8 .twitter-box .twitter span p {
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgba(85, 239, 196, 1.0);
+}
+
+.about-area .wraper8 .linkdin-box {
+    position: relative;
+    top: 32%;
+    left: 60%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    background: rgba(53, 59, 72, 1.0);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, .1), 2px 2px 5px rgba(0, 0, 0, .1);
+    transition: .5s;
+}
+
+.about-area .wraper8 .linkdin-box:hover {
+    width: 200px;
+    transition: .5s;
+}
+
+.about-area .wraper8 .linkdin-box .linkdin {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+}
+
+.about-area .wraper8 .linkdin-box .linkdin span {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 2.4em;
+    text-align: center;
+    color: #44bd32;
+    mix-blend-mode: screen;
+}
+
+.about-area .wraper8 .linkdin-box .linkdin span p {
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgba(85, 239, 196, 1.0);
+}
+
+.about-area .wraper8 .pintarest-box {
+    position: relative;
+    top: -6%;
+    left: 40%;
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    background: rgba(53, 59, 72, 1.0);
+    box-shadow: -2px -2px 5px rgba(0, 0, 0, .1), 2px 2px 5px rgba(0, 0, 0, .1);
+}
+
+.about-area .wraper8 .pintarest-box .pintarest {
+    position: relative;
+    top: 5px;
+    left: 10px;
+    width: 180px;
+    height: 40px;
+    border-radius: 5px;
+    background: none;
+}
+
+.about-area .wraper8 .pintarest-box .pintarest span {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 2.4em;
+    text-align: center;
+    color: #44bd32;
+    mix-blend-mode: screen;
+}
+
+.about-area .wraper8 .pintarest-box .pintarest span p {
+    position: absolute;
+    top: 5px;
+    left: 45px;
+    font-size: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 800;
+    color: rgba(85, 239, 196, 1.0);
+}
+    </style>
+</head>
+
+<body>
+    <section class="total">
+        <header class="home">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">about me</a></li>
+                <li><a href="#">my Skill</a></li>
+                <li><a href="#">Contact me</a></li>
+                <li><a href="#"> Servisec</a></li>
+                <li><a href="#">Bloogs</a></li>
+                <li><a href="#">Contact me</a></li>
+                <div id="marker"></div>
+
+            </ul>
+
+            <div class="content">
+                <h3>HI'</h3>
+                <p>I AM</p>
+                <p><span>MH:</span>HASAN</p>
+                <p>AND I AM:</p>
+            </div>
+            <div id="typing-text">
+                <div class="typingwidth">
+                    <h4 class="slid1 ">Web developer</h4>
+                    <h4 class="slid1">Web desginer</h4>
+                    <h4 class="slid1">Logo desginer</h4>
+                    <h4 class="slid1">Security SEO</h4>
+                </div>
+            </div>
+        </header>
+        <!--about section stert here-------->
+        <section class="about">
+            <h1>about <span>me</span></h1>
+            <div class="wraper1">
+                <div class="img-content">
+                    <img src="images/MYPHOTOS3%20copy.jpg" />
+                </div>
+                <div class="text-content">
+                    <h2>about me</h2>
+                    <p>
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                    </p>
+                    <button id="btn"><span>Open <span class="span1">CV</span></span></button>
+                </div>
+            </div>
+        </section>
+        <!--skill section stert here-->
+
+        <section class="Skill">
+            <h2>my<span> Skill</span></h2>
+            <div class="wraper2">
+
+                <div class="all-box">
+
+                    <div class="html5-box">
+                        <h1 class="htext">85%:html5</h1>
+                        <div class="progras">
+                            <div class="pr-color"></div>
+                        </div>
+                    </div>
+
+                    <div class="css3-box">
+                        <h1 class="htext">75%:css3</h1>
+                        <div class="progras">
+                            <div class="pr-color"></div>
+                        </div>
+                    </div>
+
+                    <div class="js-box">
+                        <h1 class="htext">55%:javascript</h1>
+                        <div class="progras">
+                            <div class="pr-color"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="jq-box">
+                        <h1 class="htext">50%:jquery</h1>
+                        <div class="progras">
+                            <div class="pr-color"></div>
+                        </div>
+                    </div>
+
+                    <div class="php-box">
+                        <h1 class="htext">70%:php</h1>
+                        <div class="progras">
+                            <div class="pr-color"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <div class="expr-box">
+                        <i class="fas fa-briefcase"></i>
+                        <div class="num-box">
+                            <p>Exparience</p>
+                            <h6>3</h6>
+                        </div>
+
+                    </div>
+                    <div class="projact-box">
+                        <i class="far fa-copy"></i>
+                        <div class="num-box">
+                            <p>projacts</p>
+                            <h6>3</h6>
+                        </div>
+                    </div>
+                    <div class="aowerd-box">
+                        <i class="fas fa-trophy"></i>
+                        <div class="num-box">
+                            <p>aowards</p>
+                            <h6>3</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="articals">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesettinm Ipsum.</p>
+                </div>
+                <button class="morebtn"><span>read more</span></button>
+            </div>
+        </section>
+
+
+        <!--skill section ending here--->
+
+        <!--SERVICES SECTION START HERE--->
+
+        <section class="services">
+            <div class="head-text">
+                <h1>my <span>service</span></h1>
+            </div>
+            <div class="wraper3">
+                <div class="boxraper">
+                    <div class="web-desgine">
+
+                        <div class="img-wraper">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="web-text">
+                            <p>Web Designe</p>
+                        </div>
+                        <div class="text-content1">
+                            <p>
+                                I can create many beautiful websites with html5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="web-development">
+
+                        <div class="img-wraper">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="web-text">
+                            <p>Web Development</p>
+                        </div>
+                        <div class="text-content1">
+                            <p>
+                                I can create many beautiful websites with html5
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="logo-desgine">
+
+                        <div class="img-wraper">
+                            <i class="fab fa-stumbleupon"></i>
+                        </div>
+                        <div class="web-text">
+                            <p>Logo designe</p>
+                        </div>
+                        <div class="text-content1">
+                            <p>
+                                I can create many beautiful websites with html5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="securityseo">
+
+                        <div class="img-wraper">
+                            <i class="far fa-chart-bar"></i>
+                        </div>
+                        <div class="web-text">
+                            <p>Security seo</p>
+                        </div>
+                        <div class="text-content1">
+                            <p>
+                                I can create many beautiful websites with html5
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxraper1">
+                    <div class="data-entry">
+                        <div class="img-wraper">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <div class="web-text">
+                            <p>Data entry</p>
+                        </div>
+                        <div class="text-content1">
+                            <p>
+                                I can create many beautiful websites with html5
+                            </p>
+                        </div>
+                    </div>
+                    <div class="graphics-sdesine">
+
+                        <div class="img-wraper">
+                            <i class="fas fa-digital-tachograph"></i>
+                        </div>
+                        <div class="web-text">
+                            <p>Graphics designe</p>
+                        </div>
+                        <div class="text-content1">
+                            <p>
+                                I can create many beautiful websites with html5
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="psd-to-html">
+
+                        <div class="img-wraper">
+                            <i class="fas fa-terminal"></i>
+
+                        </div>
+                        <div class="web-text">
+                            <p>PSD to html5</p>
+                        </div>
+                        <div class="text-content1">
+                            <p>
+                                I can create many beautiful websites with html5
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="wordpress-webdesigne">
+
+                        <div class="img-wraper">
+                            <i class="fab fa-wordpress-simple"></i>
+                        </div>
+                        <div class="web-text">
+                            <p>Wordpress WebDesigne</p>
+                        </div>
+
+                        <div class="text-content1">
+                            <p>
+                                I can create many beautiful websites with html5
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--SERVICES SECTION EINDING HERE--->
+
+        <!----->
+
+        <div class="center-img-box">
+            <div class="img-box1">
+                <div class="counting">
+                    <div class="count-box1">
+                        <span><i class="fas fa-users"></i></span>
+                        <h5>total user</h5>
+                        <h5>5000</h5>
+                    </div>
+                    <div class="count-box1">
+                        <span><i class="far fa-thumbs-up"></i></span>
+                        <h5>total likes</h5>
+                        <h5>5,00000</h5>
+                    </div>
+                    <div class="count-box1">
+                        <span><i class="fas fa-user-tie"></i></span>
+                        <h5>total client</h5>
+                        <h5>1000</h5>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="text">
+                <h1>my blogs</h1>
+            </div>
+            <div class="img-box">
+                <ul>
+                    <li class="list active" data-filter="all"><a href="#">all</a></li>
+                    <li class="list" data-filter="mobile"><a href="#">mobile</a></li>
+                    <li class="list" data-filter="camera"><a href="#">camera</a></li>
+                    <li class="list" data-filter="headphons"><a href="#">headphons</a></li>
+                    <li class="list" data-filter="shoe"><a href="#">shoe</a></li>
+                    <li class="list" data-filter="watch"><a href="#">watch</a></li>
+                </ul>
+            </div>
+            <div class="product">
+                <div class="item-box" data-item="mobile"><img src="images/mobile1.jpg" /></div>
+                <div class="item-box" data-item="camera"><img src="images/camera1.jpg" /></div>
+                <div class="item-box" data-item="headphons"><img src="images/headphone4.jpg" /></div>
+                <div class="item-box" data-item="shoe"><img src="images/shoe1.jpg" /></div>
+                <div class="item-box" data-item="watch"><img src="images/watch1.jpg" /></div>
+                <div class="item-box" data-item="mobile"><img src="images/mobile2.jpg" /></div>
+                <div class="item-box" data-item="camera"><img src="images/camera2.jpg" /></div>
+                <div class="item-box" data-item="headphons"><img src="images/headphone3.jpg" /></div>
+                <div class="item-box" data-item="shoe"><img src="images/shoe2.jpg" /></div>
+                <div class="item-box" data-item="watch"><img src="images/watch6.jpg" /></div>
+                <div class="item-box" data-item="mobile"><img src="images/mobile6.jpg" /></div>
+                <div class="item-box" data-item="camera"><img src="images/camera3.jpg" /></div>
+                <div class="item-box" data-item="headphons"><img src="images/headphone4.jpg" /></div>
+                <div class="item-box" data-item="shoe"><img src="images/shoe3.jpg" /></div>
+                <div class="item-box" data-item="watch"><img src="images/watch3.jpg" /></div>
+                <div class="item-box" data-item="mobile"><img src="images/mobile4.jpg" /></div>
+                <div class="item-box" data-item="camera"><img src="images/camera3.jpg" /></div>
+                <div class="item-box" data-item="headphons"><img src="images/headphone4.jpg" /></div>
+                <div class="item-box" data-item="shoe"><img src="images/shoe6.jpg" /></div>
+                <div class="item-box" data-item="watch"><img src="images/watch5.jpg" /></div>
+                <div class="item-box" data-item="mobile"><img src="images/mobile8.jpg" /></div>
+                <div class="item-box" data-item="watch"><img src="images/watch6.jpg" /></div>
+                <div class="item-box" data-item="shoe"><img src="images/shoe7.jpg" /></div>
+                <div class="item-box" data-item="headphons"><img src="images/headphone3.jpg" /></div>
+                <div class="item-box" data-item="camera"><img src="images/camera3.jpg" /></div>
+
+            </div>
+        </div>
+        <!---happy client area stert here---->
+        <section class="client-area">
+            <div class="area-text">
+                <h1>happy client</h1>
+            </div>
+            <div class="wraper5">
+                <div class="client1">
+                    <div class="content">
+                        <img src="images/blueimage.jpg" />
+                        <h3>mr:nibir hasan</h3>
+                        <p>he he is very good client and he is me with ecomars website developing
+                            with me i am cearfully here designing complited is websiteevery longer time i i designe</p>
+                    </div>
+                    <div class="icon-box1">
+                        <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+                        <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+                        <a href="#"><span><i class="fab fa-twitter-square"></i></span></a>
+                    </div>
+                </div>
+                <div class="client1">
+                    <div class="content">
+                        <img src="images/femal.jpg" />
+                        <h3>mr:abraham</h3>
+                        <p>he he is very good client and he is me with ecomars website developing
+                            with me i am cearfully here designing complited is websiteevery longer time i i designe</p>
+                    </div>
+                    <div class="icon-box2">
+                        <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+                        <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+                        <a href="#"><span><i class="fab fa-twitter-square"></i></span></a>
+                    </div>
+                </div>
+                <div class="client1">
+                    <div class="content">
+                        <img src="images/mal.jpg" />
+                        <h3>mr:jubayer</h3>
+                        <p>he he is very good client and he is me with ecomars website developing
+                            with me i am cearfully here designing complited is websiteevery longer time i i designe</p>
+                    </div>
+                    <div class="icon-box3">
+                        <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+                        <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+                        <a href="#"><span><i class="fab fa-twitter-square"></i></span></a>
+                    </div>
+                </div>
+                <div class="client1">
+                    <div class="content">
+                        <img src="images/femal1.jpg" />
+                        <h3>mr:fln.nasim</h3>
+                        <p>he he is very good client and he is me with ecomars website developing
+                            with me i am cearfully here designing complited is websiteevery longer time i i designe</p>
+                    </div>
+                    <div class="icon-box4">
+                        <a href="#"><span><i class="fab fa-instagram"></i></span></a>
+                        <a href="#"><span><i class="fab fa-facebook"></i></span></a>
+                        <a href="#"><span><i class="fab fa-twitter-square"></i></span></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---happy client area end here---->
+        <!---letest project start here---->
+        <div class="letest-area">
+            <div class="title">
+                <h1>letest project</h1>
+            </div>
+            <div class="wraper6">
+                <div class="content-wraper">
+                    <div class="content-box">
+                        <div class="img-box">
+                            <img src="images/headphone4.jpg" />
+                        </div>
+                        <div class="article-area">
+                            <h3>malika avin</h3>
+                            <br />
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of passage, and going through the cites of the word in classica</p>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="img-box">
+                            <img src="images/femal.jpg" />
+                        </div>
+                        <div class="article-area">
+                            <h3>muntasim khalid</h3>
+                            <br />
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of passage, and going through the cites of the word in classica</p>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="img-box">
+                            <img src="images/bleckkey.jpeg" />
+                        </div>
+                        <div class="article-area">
+                            <h3>freelancer nasim</h3>
+                            <br />
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of passage, and going through the cites of the word in classica</p>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="img-box">
+                            <img src="images/camera1.jpg" />
+                        </div>
+                        <div class="article-area">
+                            <h3>amita shaha</h3>
+                            <br />
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of passage, and going through the cites of the word in classica</p>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="img-box">
+                            <img src="images/camera2.jpg" />
+                        </div>
+                        <div class="article-area">
+                            <h3>freelancer nasim</h3>
+                            <br />
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of passage, and going through the cites of the word in classica</p>
+                        </div>
+                    </div>
+                    <div class="content-box">
+                        <div class="img-box">
+                            <img src="images/headphone3.jpg" />
+                        </div>
+                        <div class="article-area">
+                            <h3>fariya akter</h3>
+                            <br />
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of passage, and going through the cites of the word in classica</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!---letest project ending here---->
+        <!---contact area start here---->
+        <div class="contact-box">
+            <div class="contact-title">
+                <h1>contact me</h1>
+            </div>
+            <div class="wraper7">
+                <div class="contact">
+                    <div class="img-box">
+                        <img src="images/contactimg.png" alt="">
+                    </div>
+                    <form action="">
+                        <div class="form-box">
+                            <div class="input-box">
+                                <label class="label-text" for="username">username</label>
+                                <input type="text" name="username" placeholder="pleas enter your usernamae" class="username" />
+                                <br>
+                                <label class="label-text" for="Email">Email</label>
+                                <input type="text" name="Email" placeholder="pleas enter your gmail" class="Email" />
+                                <div class="disc-box">
+                                    <textarea name="text" id="disciption"></textarea>
+                                </div>
+                                <div class="btn-box">
+                                    <span><i class="far fa-paper-plane"></i></span>
+                                    <button class="btn">sent-massege</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!---contact area ending here---->
+
+        <!---aboute area start here---->
+        <section class="about-area">
+            <div class="contact-title">
+                <h1>about</h1>
+            </div>
+            <div class="wraper8">
+                <div class="facebook-box">
+                    <div class="facebook"><span><i class="fab fa-facebook-square"></i>
+                            <p>facebook</p>
+                        </span></div>
+                </div>
+                <div class="instagram-box">
+                    <div class="instagram"><span><i class="fab fa-instagram-square"></i>
+                            <p>insragram</p>
+                        </span></div>
+                </div>
+                <div class="twitter-box">
+                    <div class="twitter"><span><i class="fab fa-twitter-square"></i>
+                            <p>twitter</p>
+                        </span></div>
+                </div>
+                <div class="linkdin-box">
+                    <div class="linkdin"><span><i class="fab fa-linkedin"></i>
+                            <p>linkdin</p>
+                        </span></div>
+                </div>
+                <div class="pintarest-box">
+                    <div class="pintarest"><span><i class="fab fa-pinterest-square"></i>
+                            <p>pintarest</p>
+                        </span></div>
+                </div>
+            </div>
+        </section>
+        <!---aboute area einding here---->
+    </section>
+
+    <!---javascript stert here---->
+    <script>
+        var list = document.querySelectorAll(".list");
+        var itembox = document.querySelectorAll(".item-box");
+
+        for (var i = 0; i < list.length; i++) {
+            list[i].addEventListener("click", function() {
+                for (var j = 0; j < list.length; j++) {
+                    list[j].classList.remove("active");
+
+                }
+
+                this.classList.add("active");
+
+                var dataFilter = this.getAttribute("data-filter");
+                for (var k = 0; k < itembox.length; k++) {
+
+                    itembox[k].classList.remove("active");
+                    itembox[k].classList.add("hide");
+
+                    if (itembox[k].getAttribute("data-item") == dataFilter ||
+                        dataFilter == 'all') {
+                        itembox[k].classList.remove("hide")
+                        itembox[k].classList.add("active")
+
+                    }
+
+                }
+
+            });
+
+        }
+
+        function bubled() {
+            var counter = 300;
+            var i = 0;
+            var bul = document.querySelector(".home");
+            while (i < counter) {
+
+                var buble = document.createElement("i");
+                var size = Math.random() * 10;
+                var y = Math.random() * window.innerWidth;
+                var x = Math.random() * window.innerHeight;
+
+
+
+                buble.style.top = x + 'px';
+                buble.style.right = y + 'px';
+
+
+
+                buble.style.width = 1 + size + 'px';
+                buble.style.height = 1 + size + 'px';
+                bul.appendChild(buble)
+
+                i++
+            }
+
+        }
+        bubled();
+
+        var num = [' translateY(-0px)', 'translateY(-74px)', 'translateY(-150px)', 'translateY(-236px)'];
+
+        var typingwidth = document.querySelector(".typingwidth");
+        var typing = document.querySelector("#typing-text");
+
+        var count = 0;
+
+        setInterval(function() {
+
+            count++;
+
+            if (count >= num.length) {
+                count = 0;
+                typingwidth.style.transform = num[count];
+            } else {
+
+                typingwidth.style.transform = num[count];
+
+            }
+            typingwidth.style.transition = '.8s';
+
+        }, 3500);
+
+        ///typing sliding area stert here
+
+        //scrollY about about section stert here
+        var wraper1 = document.querySelector(".wraper1");
+        window.addEventListener("scroll", function() {
+            wraper1.classList.toggle("show", window.scrollY > 150);
+            wraper1.style.transition = '.5s';
+        })
+        ///scrollY about about section ending here
+    </script>
+
+</body></html>
